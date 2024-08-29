@@ -2,12 +2,14 @@
   display: flex;
   align-items: center;
   padding: 15px 20px;
+  margin-bottom: 5px;
 }
 .header__shadow {
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
 }
 .header__arrow {
   font-size: x-large;
+  color: var(--dark-gray);
 }
 .header__arrow__none {
   display: none;
