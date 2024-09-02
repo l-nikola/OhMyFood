@@ -6,10 +6,12 @@
   --secondaire: #ff79da;
   --tertiaire: #99e2d0;
   --dark-gray: #353535;
+  --background-gray: #f6f6f6;
 }
 
 /****** General ***********/
 * {
   margin: 0;
   padding: 0;
+  font-family: "Roboto";
 }

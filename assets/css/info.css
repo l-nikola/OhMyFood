@@ -1,0 +1,16 @@
+.info {
+  background-color: var(--background-gray);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.info__title {
+  padding: 0 44px;
+}
+.info__text {
+  font-size: 18px;
+  color: var(--dark-gray);
+  font-weight: 300;
+  padding: 0 16px;
+}
