@@ -4,7 +4,7 @@
   background-color: #eaeaea;
   padding: 20px;
   font-size: 19px;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.35);
 }
 .location__icon {
   color: var(--dark-gray);
