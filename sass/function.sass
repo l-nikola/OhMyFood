@@ -7,6 +7,11 @@
     margin-bottom: 30px
 
   /* ********** Card ********** */
+  &__groupCard
+    display: flex
+    flex-direction: column
+    gap: 30px
+
   &__card
     display: flex
     justify-content: center
@@ -28,9 +33,12 @@
       align-items: center
 
     &__icon
-      font-size: 25px
+      font-size: 20px
       color: var(--icon-gray)
       margin-right: 20px
+
+      &--violet
+        color: var(--primaire)
 
     &__text
       font-size: 18px
