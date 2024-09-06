@@ -46,3 +46,14 @@
 .restaurant__card__icon {
   font-size: x-large;
 }
+.restaurant__card__icon--select {
+  background: linear-gradient(
+    193deg,
+    var(--primaire) -11%,
+    var(--secondaire) 124%
+  );
+  /* Limite l'application de l'arrière-plan à la zone du texte. */
+  background-clip: text;
+  /* Rend le texte transparent pour montrer l'arrière-plan à travers. */
+  -webkit-text-fill-color: transparent;
+}
