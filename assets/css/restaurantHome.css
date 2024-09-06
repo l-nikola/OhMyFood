@@ -1,0 +1,29 @@
+/****** Cards ***********/
+
+.card {
+  display: flex;
+  justify-content: center;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 346px;
+  height: 231px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+  object-position: 50% -50px;
+  margin-bottom: 0;
+}
+
+.card-title {
+  font-size: 16px;
+}
+
+.card-subtitle {
+  font-size: 15px;
+}
