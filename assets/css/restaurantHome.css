@@ -4,18 +4,18 @@
 }
 
 /****** Cards ***********/
-.card {
+.restaurant__card {
   display: flex;
   justify-content: center;
 }
-.card .card-content {
+.restaurant__card__content {
   display: flex;
   flex-direction: column;
   background-color: white;
   border-radius: 20px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
 }
-.card .card-content img {
+.restaurant__card__content img {
   width: 346px;
   height: 175px;
   object-fit: cover;
@@ -23,20 +23,20 @@
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-.card .card-content .card-info {
+.restaurant__card__info {
   padding: 10px 15px 10px 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: black;
 }
-.card .card-content .card-info .card-title {
+.restaurant__card__title {
   font-size: 18px;
 }
-.card .card-content .card-info .card-subtitle {
+.restaurant__card__subtitle {
   font-size: 17px;
   font-weight: 300;
 }
-.card .card-content .card-info .card-icon {
+.restaurant__card__icon {
   font-size: x-large;
 }

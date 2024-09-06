@@ -1,15 +1,13 @@
 /****** General ***********/
-
 .restaurant
   background-color: var(--background-gray)
 
 /****** Cards ***********/
-
-.card
+.restaurant__card
   display: flex
   justify-content: center
 
-  .card-content
+  &__content
     display: flex
     flex-direction: column
     background-color: white
@@ -24,19 +22,19 @@
       border-top-left-radius: 20px
       border-top-right-radius: 20px
 
-    .card-info
-      padding: 10px 15px 10px 10px
-      display: flex
-      justify-content: space-between
-      align-items: center
-      color: black
+  &__info
+    padding: 10px 15px 10px 10px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    color: black
 
-      .card-title
-        font-size: 18px
+  &__title
+    font-size: 18px
 
-      .card-subtitle
-        font-size: 17px
-        font-weight: 300
+  &__subtitle
+    font-size: 17px
+    font-weight: 300
 
-      .card-icon
-        font-size: x-large
+  &__icon
+    font-size: x-large
