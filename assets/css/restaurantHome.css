@@ -1,29 +1,42 @@
-/****** Cards ***********/
+/****** General ***********/
+.restaurant {
+  background-color: var(--background-gray);
+}
 
+/****** Cards ***********/
 .card {
   display: flex;
   justify-content: center;
 }
-
-.card-content {
+.card .card-content {
   display: flex;
   flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
 }
-
-.card img {
+.card .card-content img {
   width: 346px;
-  height: 231px;
+  height: 175px;
+  object-fit: cover;
+  object-position: bottom;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  object-fit: cover;
-  object-position: 50% -50px;
-  margin-bottom: 0;
 }
-
-.card-title {
-  font-size: 16px;
+.card .card-content .card-info {
+  padding: 10px 15px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
 }
-
-.card-subtitle {
-  font-size: 15px;
+.card .card-content .card-info .card-title {
+  font-size: 18px;
+}
+.card .card-content .card-info .card-subtitle {
+  font-size: 17px;
+  font-weight: 300;
+}
+.card .card-content .card-info .card-icon {
+  font-size: x-large;
 }
