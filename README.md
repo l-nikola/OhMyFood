@@ -17,6 +17,18 @@ Pour installer le projet, clonez le dépôt GitHub
 git clone https://github.com/l-nikola/OhMyFood.git
 ```
 
+Installer les dépendances
+
+```bash
+npm install
+```
+
+Pour lancer sass
+
+```bash
+npm run sass
+```
+
 ## Fonctionnalités
 
 - Réservation en ligne : Permet aux utilisateurs de réserver une table dans les restaurants partenaires.
