@@ -1,6 +1,191 @@
-/****** Variable ***********/
+@charset "UTF-8";
+/****** Import ***********/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+.header {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  margin-bottom: 5px;
+}
+.header__shadow {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+.header__arrow {
+  font-size: x-large;
+  color: var(--dark-gray);
+}
+.header__arrow__none {
+  display: none;
+}
+.header__logo-link {
+  flex: 1;
+  text-align: center;
+}
+.header__logo {
+  width: 200px;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  background-color: #eaeaea;
+  padding: 20px;
+  font-size: 19px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.35);
+}
+.location__icon {
+  color: var(--dark-gray);
+}
+.location__text {
+  margin-left: 15px;
+  font-weight: 500;
+  color: var(--dark-gray);
+}
+
+.info {
+  background-color: var(--background-gray);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 6px;
+}
+.info__title {
+  padding: 30px 44px 0 44px;
+}
+.info__text {
+  font-size: 18px;
+  color: var(--dark-gray);
+  font-weight: 300;
+  padding: 0 16px 20px 16px;
+}
+.info__button {
+  width: 220px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 60px;
+  background: linear-gradient(0deg, var(--primaire) -12%, var(--secondaire) 124%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.function {
+  padding: 50px 0 70px 0;
+  /* ********** Card ********** */
+}
+.function__groupCard {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+.function__card {
+  display: flex;
+  justify-content: center;
+  margin-left: 30px;
+  margin-right: 20px;
+}
+.function__card__content {
+  width: 322px;
+  height: 72px;
+  border-radius: 20px;
+  background-color: var(--background-gray);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  padding-left: 35px;
+  position: relative;
+}
+.function__card__info {
+  display: flex;
+  align-items: center;
+}
+.function__card__icon {
+  font-size: 20px;
+  color: var(--icon-gray);
+  margin-right: 20px;
+}
+.function__card__icon--violet {
+  color: var(--primaire);
+}
+.function__card__text {
+  font-size: 18px;
+  font-weight: 500;
+}
+.function__number {
+  color: white;
+  background-color: var(--primaire);
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -12px;
+  top: 35%;
+}
+
+/****** General ***********/
+.restaurant {
+  background-color: var(--background-gray);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 0;
+}
+
+/****** Cards ***********/
+.restaurant__card {
+  display: flex;
+  justify-content: center;
+}
+.restaurant__card__content {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 15px;
+}
+.restaurant__card__content img {
+  width: 346px;
+  height: 175px;
+  object-fit: cover;
+  object-position: bottom;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.restaurant__card__content .restaurant__card__content--enchantee {
+  object-position: 0 -157px;
+}
+.restaurant__card__info {
+  padding: 10px 15px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+.restaurant__card__title {
+  font-size: 18px;
+}
+.restaurant__card__subtitle {
+  font-size: 17px;
+  font-weight: 300;
+}
+.restaurant__card__icon {
+  font-size: x-large;
+}
+.restaurant__card__icon--select {
+  background: linear-gradient(193deg, var(--primaire) -11%, var(--secondaire) 124%);
+  /* Limite l'application de l'arrière-plan à la zone du texte. */
+  background-clip: text;
+  /* Rend le texte transparent pour montrer l'arrière-plan à travers. */
+  -webkit-text-fill-color: transparent;
+}
+
+/****** Variable ***********/
 :root {
   --primaire: #9356dc;
   --secondaire: #ff79da;
@@ -24,3 +209,5 @@ a {
 .title {
   margin-left: 20px;
 }
+
+/*# sourceMappingURL=style.css.map */

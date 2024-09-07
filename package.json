@@ -1,0 +1,16 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Ohmyfood, une startup en restauration, souhaite développer un site “mobile first”. Le site permettra aux clients de réserver et de composer leur menu à l'avance, réduisant ainsi les temps d'attente.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass/style.sass:./assets/css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.78.0"
+  }
+}
