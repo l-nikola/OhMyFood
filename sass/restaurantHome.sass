@@ -50,3 +50,19 @@
       background-clip: text
       /* Rend le texte transparent pour montrer l'arrière-plan à travers. */
       -webkit-text-fill-color: transparent
+
+/****** Icon button ***********/
+.restaurant__card__icon--btn
+  background: none
+  border: none
+
+  &:focus .fa-regular
+    display: none
+
+  &:focus .fa-solid
+    display: inline
+
+/****** Icon states ***********/
+.fa-solid
+  display: none
+

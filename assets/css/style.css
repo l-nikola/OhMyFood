@@ -191,6 +191,23 @@
   -webkit-text-fill-color: transparent;
 }
 
+/****** Icon button ***********/
+.restaurant__card__icon--btn {
+  background: none;
+  border: none;
+}
+.restaurant__card__icon--btn:focus .fa-regular {
+  display: none;
+}
+.restaurant__card__icon--btn:focus .fa-solid {
+  display: inline;
+}
+
+/****** Icon states ***********/
+.fa-solid {
+  display: none;
+}
+
 /****** Variable ***********/
 :root {
   --primaire: #9356dc;
