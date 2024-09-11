@@ -220,6 +220,18 @@
   display: none;
 }
 
+.footer {
+  background-color: var(--dark-gray);
+  color: white;
+}
+.footer__title {
+  font-family: Shrikhand, sans-serif;
+  font-size: 18px;
+}
+.footer__highlight {
+  font-weight: 500;
+}
+
 /****** Variable ***********/
 :root {
   --primaire: #9356dc;
