@@ -16,6 +16,7 @@
     flex-direction: column
     background-color: white
     border-radius: 15px
+    position: relative 
 
     img
       width: 346px
@@ -24,6 +25,17 @@
       object-position: bottom
       border-top-left-radius: 15px
       border-top-right-radius: 15px
+
+  &__new
+      position: absolute
+      top: 15px
+      right: 15px
+      background-color: var(--tertiaire)
+      color: var(--new-txt)
+      padding: 6px 12px
+      border-radius: 2px
+      font-size: 14px
+      font-weight: 500
 
   &__info
     padding: 15px 15px 20px 10px
@@ -65,4 +77,3 @@
 /****** Icon states ***********/
 .fa-solid
   display: none
-

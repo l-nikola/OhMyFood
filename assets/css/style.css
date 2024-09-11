@@ -155,6 +155,7 @@
   flex-direction: column;
   background-color: white;
   border-radius: 15px;
+  position: relative;
 }
 .restaurant__card__content img {
   width: 346px;
@@ -163,6 +164,17 @@
   object-position: bottom;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+}
+.restaurant__card__new {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: var(--tertiaire);
+  color: var(--new-txt);
+  padding: 6px 12px;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 500;
 }
 .restaurant__card__info {
   padding: 15px 15px 20px 10px;
@@ -216,6 +228,7 @@
   --dark-gray: #353535;
   --background-gray: #f6f6f6;
   --icon-gray: #7e7e7e;
+  --new-txt: #008766;
 }
 
 /****** General ***********/
