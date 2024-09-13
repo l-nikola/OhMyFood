@@ -27,15 +27,15 @@
       border-top-right-radius: 15px
 
   &__new
-      position: absolute
-      top: 15px
-      right: 15px
-      background-color: var(--tertiaire)
-      color: var(--new-txt)
-      padding: 6px 12px
-      border-radius: 2px
-      font-size: 14px
-      font-weight: 500
+    position: absolute
+    top: 15px
+    right: 15px
+    background-color: var(--tertiaire)
+    color: var(--new-txt)
+    padding: 6px 12px
+    border-radius: 2px
+    font-size: 14px
+    font-weight: 500
 
   &__info
     padding: 15px 15px 20px 10px
@@ -56,24 +56,23 @@
   &__icon
     font-size: x-large
 
-    &--select
-      background: linear-gradient(193deg, var(--primaire) -11%, var(--secondaire) 124%)
-      /* Limite l'application de l'arrière-plan à la zone du texte. */
-      background-clip: text
-      /* Rend le texte transparent pour montrer l'arrière-plan à travers. */
-      -webkit-text-fill-color: transparent
-
-/****** Icon button ***********/
-.restaurant__card__icon--btn
-  background: none
-  border: none
-
-  &:focus .fa-regular
-    display: none
-
-  &:focus .fa-solid
-    display: inline
-
-/****** Icon states ***********/
-.restaurant__card__icon--select
+.like-checkbox
   display: none
+
+/****** Gestion des icônes selon l'état du checkbox ***********/
+/****** Cacher l'icone like active ***********/
+.like-checkbox + .restaurant__card__icon--btn .fa-solid
+  display: none
+
+/****** Cacher l'icone like non active quand le restaurant est selectionné ***********/
+.like-checkbox:checked + .restaurant__card__icon--btn .fa-regular
+  display: none
+
+/****** Style de l'icone active ***********/
+.like-checkbox:checked + .restaurant__card__icon--btn .fa-solid
+  display: inline
+  background: linear-gradient(193deg, var(--primaire) -11%, var(--secondaire) 124%)
+  /* Limite l'application de l'arrière-plan à la zone du texte. */
+  background-clip: text
+  /* Rend le texte transparent pour montrer l'arrière-plan à travers. */
+  -webkit-text-fill-color: transparent
