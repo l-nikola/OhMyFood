@@ -192,26 +192,22 @@
 }
 .restaurant__card__icon {
   font-size: x-large;
-}
-
-.like-checkbox {
   display: none;
 }
-
-/****** Gestion des icônes selon l'état du checkbox ***********/
-/****** Cacher l'icone like active ***********/
-.like-checkbox + .restaurant__card__icon--btn .fa-solid {
+.restaurant__card__icon--deselect {
+  display: inline-block;
+}
+.restaurant__card__icon--button {
+  position: absolute;
+  margin: 52% 0 0 72%;
+  background-color: transparent;
+  border: none;
+}
+.restaurant__card__icon--button:focus .restaurant__card__icon--deselect {
   display: none;
 }
-
-/****** Cacher l'icone like non active quand le restaurant est selectionné ***********/
-.like-checkbox:checked + .restaurant__card__icon--btn .fa-regular {
-  display: none;
-}
-
-/****** Style de l'icone active ***********/
-.like-checkbox:checked + .restaurant__card__icon--btn .fa-solid {
-  display: inline;
+.restaurant__card__icon--button:focus .restaurant__card__icon--select {
+  display: inline-block;
   background: linear-gradient(193deg, var(--primaire) -11%, var(--secondaire) 124%);
   /* Limite l'application de l'arrière-plan à la zone du texte. */
   background-clip: text;

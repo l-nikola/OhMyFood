@@ -55,24 +55,25 @@
 
   &__icon
     font-size: x-large
+    display: none
 
-.like-checkbox
-  display: none
+    &--deselect
+      display: inline-block
 
-/****** Gestion des icônes selon l'état du checkbox ***********/
-/****** Cacher l'icone like active ***********/
-.like-checkbox + .restaurant__card__icon--btn .fa-solid
-  display: none
 
-/****** Cacher l'icone like non active quand le restaurant est selectionné ***********/
-.like-checkbox:checked + .restaurant__card__icon--btn .fa-regular
-  display: none
+  &__icon--button
+    position: absolute
+    margin: 52% 0 0 72%
+    background-color: transparent
+    border: none
 
-/****** Style de l'icone active ***********/
-.like-checkbox:checked + .restaurant__card__icon--btn .fa-solid
-  display: inline
-  background: linear-gradient(193deg, var(--primaire) -11%, var(--secondaire) 124%)
-  /* Limite l'application de l'arrière-plan à la zone du texte. */
-  background-clip: text
-  /* Rend le texte transparent pour montrer l'arrière-plan à travers. */
-  -webkit-text-fill-color: transparent
+    &:focus .restaurant__card__icon--deselect
+      display: none
+
+    &:focus .restaurant__card__icon--select
+      display: inline-block
+      background: linear-gradient(193deg,var(--primaire) -11%, var(--secondaire) 124%)
+      /* Limite l'application de l'arrière-plan à la zone du texte. */
+      background-clip: text
+      /* Rend le texte transparent pour montrer l'arrière-plan à travers. */
+      -webkit-text-fill-color: transparent
