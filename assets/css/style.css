@@ -245,6 +245,7 @@
 }
 .footer__text a {
   color: white;
+  font-size: 17px;
 }
 .footer__highlight {
   font-weight: 500;
