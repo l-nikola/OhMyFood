@@ -250,6 +250,48 @@
   margin-right: 10px;
 }
 
+.loader {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 9px solid;
+  border-color: #99e2d0;
+  border-right-color: #9356dc;
+  animation: spin 1s infinite linear;
+  position: fixed;
+  top: 45%;
+  left: 40%;
+  background-color: white;
+  animation: spin 1s infinite linear, hideLoader 0s forwards 2s;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes hideLoader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes showContent {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.content {
+  opacity: 0;
+  animation: showContent 0s forwards 2s;
+}
+
 /****** Variable ***********/
 :root {
   --primaire: #9356dc;
