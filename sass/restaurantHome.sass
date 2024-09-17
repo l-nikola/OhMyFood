@@ -61,19 +61,19 @@
       display: inline-block
 
 
-  &__icon--button
-    position: absolute
-    margin: 53% 0 0 72%
-    background-color: transparent
-    border: none
+    &--button
+      position: absolute
+      margin: 53% 0 0 72%
+      background-color: transparent
+      border: none
 
-    &:focus .restaurant__card__icon--deselect
-      display: none
+      &:focus .restaurant__card__icon--deselect
+        display: none
 
-    &:focus .restaurant__card__icon--select
-      display: inline-block
-      background: linear-gradient(193deg,var(--primaire) -11%, var(--secondaire) 124%)
-      /* Limite l'application de l'arrière-plan à la zone du texte. */
-      background-clip: text
-      /* Rend le texte transparent pour montrer l'arrière-plan à travers. */
-      -webkit-text-fill-color: transparent
+      &:focus .restaurant__card__icon--select
+        display: inline-block
+        background: linear-gradient(193deg,var(--primaire) -11%, var(--secondaire) 124%)
+        /* Limite l'application de l'arrière-plan à la zone du texte. */
+        background-clip: text
+        /* Rend le texte transparent pour montrer l'arrière-plan à travers. */
+        -webkit-text-fill-color: transparent
