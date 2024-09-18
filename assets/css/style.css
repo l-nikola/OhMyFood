@@ -202,22 +202,37 @@
 .restaurant__card__icon--deselect {
   display: inline-block;
 }
+.restaurant__card__icon--select {
+  display: none;
+}
 .restaurant__card__icon--button {
   position: absolute;
   margin: 53% 0 0 72%;
   background-color: transparent;
   border: none;
+  overflow: hidden;
+}
+.restaurant__card__icon--button::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(193deg, var(--primaire) -11%, var(--secondaire) 124%);
+  transition: opacity 0.5s ease-in-out, top 0.5s ease-in-out;
+  /* Limite l'application de l'arrière-plan à la zone du texte. */
+  /* Rend le texte transparent pour montrer l'arrière-plan à travers. */
+  -webkit-text-fill-color: transparent;
+}
+.restaurant__card__icon--button:focus::before {
+  top: 0;
+  opacity: 1;
 }
 .restaurant__card__icon--button:focus .restaurant__card__icon--deselect {
   display: none;
 }
 .restaurant__card__icon--button:focus .restaurant__card__icon--select {
   display: inline-block;
-  background: linear-gradient(193deg, var(--primaire) -11%, var(--secondaire) 124%);
-  /* Limite l'application de l'arrière-plan à la zone du texte. */
-  background-clip: text;
-  /* Rend le texte transparent pour montrer l'arrière-plan à travers. */
-  -webkit-text-fill-color: transparent;
 }
 
 .footer {
