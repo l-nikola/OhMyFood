@@ -310,6 +310,10 @@
     opacity: 1;
   }
 }
+.picture {
+  width: 100%;
+}
+
 /****** Variable ***********/
 :root {
   --primaire: #9356dc;
