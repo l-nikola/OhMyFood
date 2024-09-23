@@ -9,6 +9,12 @@
 .header__shadow {
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
   margin-bottom: 5px;
+  /*********** Desktop ***********/
+}
+@media only screen and (min-width: 1024px) {
+  .header__shadow {
+    box-shadow: none;
+  }
 }
 .header__arrow {
   position: absolute;
@@ -36,8 +42,16 @@
   background-color: #eaeaea;
   font-size: 19px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.35);
+  margin-bottom: 6px;
   height: 50px;
   align-items: center;
+  /*********** Desktop ***********/
+}
+@media only screen and (min-width: 1024px) {
+  .location {
+    box-shadow: none;
+    margin-bottom: 0;
+  }
 }
 .location__icon {
   color: var(--dark-gray);
@@ -61,7 +75,6 @@
   flex-direction: column;
   align-items: center;
   gap: 15px;
-  margin-top: 6px;
 }
 .info__title {
   padding: 30px 44px 0 44px;
