@@ -119,6 +119,13 @@
   flex-direction: column;
   gap: 30px;
   margin-top: 30px;
+  /*********** Desktop ***********/
+}
+@media only screen and (min-width: 1024px) {
+  .function__groupCard {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .function__card {
   display: flex;
@@ -132,6 +139,12 @@
   background-color: var(--background-gray);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   position: relative;
+  /*********** Desktop ***********/
+}
+@media only screen and (min-width: 1024px) {
+  .function__card__content {
+    width: 335px;
+  }
 }
 .function__card__info {
   display: flex;
