@@ -6,116 +6,116 @@
   gap: 20px
   padding: 50px 0 65px 0
 
-.restaurant__groupCard
-  display: flex
-  flex-direction: column
-  gap: 20px
-
-  /*********** Desktop ***********/
-  @media only screen and (min-width: 1024px)
-    display: grid
-    grid-template-columns: repeat(2, 1fr)
-    grid-gap: 50px
-
-/****** Cards ***********/
-.restaurant__card
-  display: flex
-  justify-content: center
-
-  /*********** Desktop ***********/
-  @media only screen and (min-width: 1024px)
-    &__right
-      justify-content: left
-    
-    &__left
-      justify-content: right
-
-  &__content
+  /****** Cards ***********/
+  &__groupCard
     display: flex
     flex-direction: column
-    background-color: white
-    border-radius: 15px
-    position: relative 
+    gap: 20px
 
     /*********** Desktop ***********/
     @media only screen and (min-width: 1024px)
-      width: 490px
+      display: grid
+      grid-template-columns: repeat(2, 1fr)
+      grid-gap: 50px
 
-    img
-      width: 346px
-      height: 175px
-      object-fit: cover
-      object-position: bottom
-      border-top-left-radius: 15px
-      border-top-right-radius: 15px
-
-      /*********** Desktop ***********/
-      @media only screen and (min-width: 1024px)
-        width: auto
-        height: 230px
-        object-position: center
-
-  &__new
-    position: absolute
-    top: 15px
-    right: 15px
-    background-color: var(--tertiaire)
-    color: var(--new-txt)
-    padding: 6px 12px
-    border-radius: 2px
-    font-size: 14px
-    font-weight: 500
-
-  &__info
-    padding: 15px 0 15px 15px
+  &__card
     display: flex
-    justify-content: space-between
-    align-items: center
-    color: black
+    justify-content: center
 
-  &__title
-    font-size: 18px
-    font-weight: 800
-    margin-bottom: 5px
+    /*********** Desktop ***********/
+    @media only screen and (min-width: 1024px)
+      &__right
+        justify-content: left
+    
+      &__left
+        justify-content: right
 
-  &__subtitle
-    font-size: 17px
-    font-weight: 300
-
-  &__icon
-    font-size: x-large
-    display: none
-    position: absolute
-
-    &--deselect
-      display: inline-block    
-
-    &--select
-      display: none  
-
-    &--button
-      position: absolute
-      margin: 200px 0 0 240px
-      background-color: transparent
-      border: none
+    &__content
+      display: flex
+      flex-direction: column
+      background-color: white
+      border-radius: 15px
+      position: relative 
 
       /*********** Desktop ***********/
       @media only screen and (min-width: 1024px)
-        margin: 255px 55px 0 435px
+        width: 490px
 
-      .restaurant__card__icon--select
-        opacity: 0
-        display: block
-        background: linear-gradient(0deg, var(--primaire) -12%, var(--secondaire) 124%)
-        -webkit-background-clip: text
-        -webkit-text-fill-color: transparent
-        clip-path: inset(100% 0 0 0) // Initialement caché (du bas vers le haut)
-        transition: clip-path 1s ease-in-out
+      img
+        width: 346px
+        height: 175px
+        object-fit: cover
+        object-position: bottom
+        border-top-left-radius: 15px
+        border-top-right-radius: 15px
 
-      &:hover .restaurant__card__icon--select
-        opacity: 1
-        clip-path: inset(0 0 0 0) // Révèle progressivement l'icône du bas vers le haut
+        /*********** Desktop ***********/
+        @media only screen and (min-width: 1024px)
+          width: auto
+          height: 230px
+          object-position: center
 
-      &:hover .restaurant__card__icon--deselect
-        opacity: 0
-        transition: opacity 2s ease-in-out
+    &__new
+      position: absolute
+      top: 15px
+      right: 15px
+      background-color: var(--tertiaire)
+      color: var(--new-txt)
+      padding: 6px 12px
+      border-radius: 2px
+      font-size: 14px
+      font-weight: 500
+
+    &__info
+      padding: 15px 0 15px 15px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      color: black
+
+    &__title
+      font-size: 18px
+      font-weight: 800
+      margin-bottom: 5px
+
+    &__subtitle
+      font-size: 17px
+      font-weight: 300
+
+    &__icon
+      font-size: x-large
+      display: none
+      position: absolute
+
+      &--deselect
+        display: inline-block    
+
+      &--select
+        display: none  
+
+      &--button
+        position: absolute
+        margin: 200px 0 0 240px
+        background-color: transparent
+        border: none
+
+        /*********** Desktop ***********/
+        @media only screen and (min-width: 1024px)
+          margin: 255px 55px 0 435px
+
+        .restaurant__card__icon--select
+          opacity: 0
+          display: block
+          background: linear-gradient(0deg, var(--primaire) -12%, var(--secondaire) 124%)
+          -webkit-background-clip: text
+          -webkit-text-fill-color: transparent
+          clip-path: inset(100% 0 0 0) // Initialement caché (du bas vers le haut)
+          transition: clip-path 1s ease-in-out
+
+        &:hover .restaurant__card__icon--select
+          opacity: 1
+          clip-path: inset(0 0 0 0) // Révèle progressivement l'icône du bas vers le haut
+
+        &:hover .restaurant__card__icon--deselect
+          opacity: 0
+          transition: opacity 2s ease-in-out

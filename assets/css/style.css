@@ -184,8 +184,8 @@
   flex-direction: column;
   gap: 20px;
   padding: 50px 0 65px 0;
+  /****** Cards ***********/
 }
-
 .restaurant__groupCard {
   display: flex;
   flex-direction: column;
@@ -199,8 +199,6 @@
     grid-gap: 50px;
   }
 }
-
-/****** Cards ***********/
 .restaurant__card {
   display: flex;
   justify-content: center;
