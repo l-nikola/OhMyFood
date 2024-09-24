@@ -186,10 +186,33 @@
   padding: 50px 0 65px 0;
 }
 
+.restaurant__groupCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /*********** Desktop ***********/
+}
+@media only screen and (min-width: 1024px) {
+  .restaurant__groupCard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+  }
+}
+
 /****** Cards ***********/
 .restaurant__card {
   display: flex;
   justify-content: center;
+  /*********** Desktop ***********/
+}
+@media only screen and (min-width: 1024px) {
+  .restaurant__card__right {
+    justify-content: left;
+  }
+  .restaurant__card__left {
+    justify-content: right;
+  }
 }
 .restaurant__card__content {
   display: flex;
@@ -197,6 +220,12 @@
   background-color: white;
   border-radius: 15px;
   position: relative;
+  /*********** Desktop ***********/
+}
+@media only screen and (min-width: 1024px) {
+  .restaurant__card__content {
+    width: 490px;
+  }
 }
 .restaurant__card__content img {
   width: 346px;
@@ -205,6 +234,14 @@
   object-position: bottom;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  /*********** Desktop ***********/
+}
+@media only screen and (min-width: 1024px) {
+  .restaurant__card__content img {
+    width: auto;
+    height: 230px;
+    object-position: center;
+  }
 }
 .restaurant__card__new {
   position: absolute;
@@ -246,9 +283,15 @@
 }
 .restaurant__card__icon--button {
   position: absolute;
-  margin: 53% 0 0 72%;
+  margin: 200px 0 0 240px;
   background-color: transparent;
   border: none;
+  /*********** Desktop ***********/
+}
+@media only screen and (min-width: 1024px) {
+  .restaurant__card__icon--button {
+    margin: 255px 55px 0 435px;
+  }
 }
 .restaurant__card__icon--button .restaurant__card__icon--select {
   opacity: 0;

@@ -6,10 +6,29 @@
   gap: 20px
   padding: 50px 0 65px 0
 
+.restaurant__groupCard
+  display: flex
+  flex-direction: column
+  gap: 20px
+
+  /*********** Desktop ***********/
+  @media only screen and (min-width: 1024px)
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-gap: 50px
+
 /****** Cards ***********/
 .restaurant__card
   display: flex
   justify-content: center
+
+  /*********** Desktop ***********/
+  @media only screen and (min-width: 1024px)
+    &__right
+      justify-content: left
+    
+    &__left
+      justify-content: right
 
   &__content
     display: flex
@@ -18,6 +37,10 @@
     border-radius: 15px
     position: relative 
 
+    /*********** Desktop ***********/
+    @media only screen and (min-width: 1024px)
+      width: 490px
+
     img
       width: 346px
       height: 175px
@@ -25,6 +48,12 @@
       object-position: bottom
       border-top-left-radius: 15px
       border-top-right-radius: 15px
+
+      /*********** Desktop ***********/
+      @media only screen and (min-width: 1024px)
+        width: auto
+        height: 230px
+        object-position: center
 
   &__new
     position: absolute
@@ -66,9 +95,13 @@
 
     &--button
       position: absolute
-      margin: 53% 0 0 72%
+      margin: 200px 0 0 240px
       background-color: transparent
       border: none
+
+      /*********** Desktop ***********/
+      @media only screen and (min-width: 1024px)
+        margin: 255px 55px 0 435px
 
       .restaurant__card__icon--select
         opacity: 0
