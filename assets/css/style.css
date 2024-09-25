@@ -312,6 +312,12 @@
 .footer {
   background-color: var(--dark-gray);
   padding-bottom: 20px;
+  /*********** Desktop ***********/
+}
+@media only screen and (min-width: 1024px) {
+  .footer {
+    padding: 45px 65px 25px 0;
+  }
 }
 .footer__list {
   display: flex;
@@ -319,6 +325,13 @@
   gap: 9px;
   list-style-type: none;
   margin-left: 25px;
+  /*********** Desktop ***********/
+}
+@media only screen and (min-width: 1024px) {
+  .footer__list {
+    flex-direction: row;
+    justify-content: end;
+  }
 }
 .footer__title {
   font-family: Shrikhand;
@@ -326,14 +339,49 @@
   font-weight: 400;
   margin: 20px 0 10px 0;
   color: white;
+  /*********** Desktop ***********/
+}
+@media only screen and (min-width: 1024px) {
+  .footer__title {
+    display: none;
+  }
+}
+.footer__title__desktop {
+  display: none;
+  /*********** Desktop ***********/
+}
+@media only screen and (min-width: 1024px) {
+  .footer__title__desktop {
+    display: inline;
+    font-family: Shrikhand;
+    font-size: 19px;
+    font-weight: 400;
+    margin: 20px 0 10px 0;
+    color: white;
+    margin-left: 90px;
+  }
 }
 .footer__text {
   display: flex;
   align-items: center;
+  /*********** Desktop ***********/
+}
+@media only screen and (min-width: 1024px) {
+  .footer__text {
+    margin-right: 5px;
+  }
 }
 .footer__text a {
   color: white;
   font-size: 17px;
+}
+.footer__text__legal {
+  /*********** Desktop ***********/
+}
+@media only screen and (min-width: 1024px) {
+  .footer__text__legal {
+    margin-left: 40px;
+  }
 }
 .footer__highlight {
   font-weight: 500;

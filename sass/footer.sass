@@ -1,6 +1,11 @@
 .footer
     background-color: var(--dark-gray)
-    padding-bottom: 20px    
+    padding-bottom: 20px  
+
+    /*********** Desktop ***********/
+    @media only screen and (min-width: 1024px)  
+        padding: 45px 65px 25px 0
+
 
     &__list
         display: flex
@@ -9,6 +14,11 @@
         list-style-type: none
         margin-left: 25px 
 
+        /*********** Desktop ***********/
+        @media only screen and (min-width: 1024px)
+            flex-direction: row
+            justify-content: end
+
     &__title
         font-family: Shrikhand
         font-size: 19px
@@ -16,12 +26,37 @@
         margin: 20px 0 10px 0
         color: white
 
+        /*********** Desktop ***********/
+        @media only screen and (min-width: 1024px)
+            display: none
+
+        &__desktop
+            display: none
+
+            /*********** Desktop ***********/
+            @media only screen and (min-width: 1024px)
+                display: inline
+                font-family: Shrikhand
+                font-size: 19px
+                font-weight: 400
+                margin: 20px 0 10px 0
+                color: white
+                margin-left: 90px
+
     &__text 
         display: flex 
         align-items: center
+        /*********** Desktop ***********/
+        @media only screen and (min-width: 1024px)
+            margin-right: 5px 
+            
         a
             color: white
             font-size: 17px
+        &__legal
+            /*********** Desktop ***********/
+            @media only screen and (min-width: 1024px)
+                margin-left: 40px 
 
     &__highlight
         font-weight: 500
@@ -30,4 +65,3 @@
         font-size: 13px
         width: 10px
         margin-right: 10px  
-        
