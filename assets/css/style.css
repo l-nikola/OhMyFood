@@ -7,6 +7,9 @@
   height: 60px;
 }
 .header__shadow {
+  display: flex;
+  justify-content: center;
+  margin-top: 6px;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
   margin-bottom: 5px;
   /*********** Desktop ***********/
@@ -25,12 +28,6 @@
 }
 .header__arrow__none {
   display: none;
-}
-.header__logo--link {
-  display: flex;
-  justify-content: center;
-  flex: 1;
-  margin-top: 6px;
 }
 .header__logo {
   width: 170px;
