@@ -321,8 +321,12 @@
   background: linear-gradient(0deg, var(--primaire) -12%, var(--secondaire) 124%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  clip-path: inset(100% 0 0 0);
-  transition: clip-path 1s ease-in-out;
+  clip-path: inset(0 0 100% 0);
+  transition: clip-path 0.7s ease-in-out;
+}
+.restaurant__card__icon--button .restaurant__card__icon--deselect {
+  opacity: 1;
+  transition: opacity 5s ease-in-out;
 }
 .restaurant__card__icon--button:hover .restaurant__card__icon--select {
   opacity: 1;
@@ -330,7 +334,14 @@
 }
 .restaurant__card__icon--button:hover .restaurant__card__icon--deselect {
   opacity: 0;
-  transition: opacity 2s ease-in-out;
+}
+.restaurant__card__icon--button:not(:hover) .restaurant__card__icon--select {
+  opacity: 1;
+  clip-path: inset(100% 0 0 0);
+  transition: clip-path 0.7s ease-in-out;
+}
+.restaurant__card__icon--button:not(:hover) .restaurant__card__icon--deselect {
+  opacity: 1;
 }
 
 .footer {

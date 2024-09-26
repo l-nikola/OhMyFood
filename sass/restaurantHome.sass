@@ -30,7 +30,7 @@
     @media only screen and (min-width: 768px)
       &__right
         justify-content: left
-    
+
       &__left
         justify-content: right
 
@@ -39,7 +39,7 @@
       flex-direction: column
       background-color: white
       border-radius: 15px
-      position: relative 
+      position: relative
 
       /*********** Desktop ***********/
       @media only screen and (min-width: 1024px)
@@ -92,10 +92,10 @@
       position: absolute
 
       &--deselect
-        display: inline-block    
+        display: inline-block
 
       &--select
-        display: none  
+        display: none
 
       &--button
         position: absolute
@@ -117,13 +117,26 @@
           background: linear-gradient(0deg, var(--primaire) -12%, var(--secondaire) 124%)
           -webkit-background-clip: text
           -webkit-text-fill-color: transparent
-          clip-path: inset(100% 0 0 0) // Initialement caché (du bas vers le haut)
-          transition: clip-path 1s ease-in-out
+          clip-path: inset(0 0 100% 0)
+          transition: clip-path 0.7s ease-in-out
 
+        .restaurant__card__icon--deselect
+          opacity: 1
+          transition: opacity 5s ease-in-out
+
+        // Lors du hover
         &:hover .restaurant__card__icon--select
           opacity: 1
-          clip-path: inset(0 0 0 0) // Révèle progressivement l'icône du bas vers le haut
+          clip-path: inset(0 0 0 0)
 
         &:hover .restaurant__card__icon--deselect
           opacity: 0
-          transition: opacity 2s ease-in-out
+
+        // Effet inverse
+        &:not(:hover) .restaurant__card__icon--select
+          opacity: 1
+          clip-path: inset(100% 0 0 0)
+          transition: clip-path 0.7s ease-in-out,
+
+        &:not(:hover) .restaurant__card__icon--deselect
+          opacity: 1
