@@ -189,7 +189,13 @@
   flex-direction: column;
   gap: 20px;
   padding: 50px 0 70px 0;
+  /*********** Desktop ***********/
   /****** Cards ***********/
+}
+@media only screen and (min-width: 1024px) {
+  .restaurant {
+    display: block;
+  }
 }
 .restaurant__groupCard {
   display: flex;
@@ -472,6 +478,13 @@ a {
 
 .title {
   margin-left: 20px;
+  /*********** Desktop ***********/
+}
+@media only screen and (min-width: 1024px) {
+  .title {
+    max-width: 1024px;
+    margin: 0 auto 30px auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
