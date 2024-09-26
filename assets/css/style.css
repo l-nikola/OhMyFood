@@ -336,7 +336,13 @@
 .footer {
   background-color: var(--dark-gray);
   padding-bottom: 20px;
-  /*********** Desktop ***********/
+  /*********** Tablet + Desktop ***********/
+  /*********** Tablet + Desktop ***********/
+}
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding: 44px 15px;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .footer {
@@ -349,9 +355,9 @@
   gap: 9px;
   list-style-type: none;
   margin-left: 25px;
-  /*********** Desktop ***********/
+  /*********** Tablet + Desktop ***********/
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .footer__list {
     flex-direction: row;
     justify-content: end;
@@ -363,18 +369,18 @@
   font-weight: 400;
   margin: 20px 0 10px 0;
   color: white;
-  /*********** Desktop ***********/
+  /*********** Tablet + Desktop ***********/
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .footer__title {
     display: none;
   }
 }
 .footer__title__desktop {
   display: none;
-  /*********** Desktop ***********/
+  /*********** Tablet + Desktop ***********/
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .footer__title__desktop {
     display: inline;
     font-family: Shrikhand;
@@ -388,9 +394,9 @@
 .footer__text {
   display: flex;
   align-items: center;
-  /*********** Desktop ***********/
+  /*********** Tablet + Desktop ***********/
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .footer__text {
     margin-right: 5px;
   }
@@ -402,7 +408,7 @@
 .footer__text__legal {
   /*********** Desktop ***********/
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .footer__text__legal {
     margin-left: 40px;
   }
@@ -425,7 +431,7 @@
   border-right-color: var(--primaire);
   position: fixed;
   top: 45%;
-  left: 40%;
+  left: 45%;
   animation: spin 1s infinite linear, hideLoader 0s forwards 2s;
   /*********** Desktop ***********/
 }

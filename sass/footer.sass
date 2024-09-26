@@ -2,7 +2,10 @@
     background-color: var(--dark-gray)
     padding-bottom: 20px  
 
-    /*********** Desktop ***********/
+    /*********** Tablet + Desktop ***********/
+    @media only screen and (min-width: 768px)  
+        padding: 44px 15px
+    /*********** Tablet + Desktop ***********/
     @media only screen and (min-width: 1024px)  
         padding: 45px 65px 25px 0
 
@@ -14,8 +17,8 @@
         list-style-type: none
         margin-left: 25px 
 
-        /*********** Desktop ***********/
-        @media only screen and (min-width: 1024px)
+        /*********** Tablet + Desktop ***********/
+        @media only screen and (min-width: 768px)
             flex-direction: row
             justify-content: end
 
@@ -26,15 +29,15 @@
         margin: 20px 0 10px 0
         color: white
 
-        /*********** Desktop ***********/
-        @media only screen and (min-width: 1024px)
+        /*********** Tablet + Desktop ***********/
+        @media only screen and (min-width: 768px)
             display: none
 
         &__desktop
             display: none
 
-            /*********** Desktop ***********/
-            @media only screen and (min-width: 1024px)
+            /*********** Tablet + Desktop ***********/
+            @media only screen and (min-width: 768px)
                 display: inline
                 font-family: Shrikhand
                 font-size: 19px
@@ -46,8 +49,8 @@
     &__text 
         display: flex 
         align-items: center
-        /*********** Desktop ***********/
-        @media only screen and (min-width: 1024px)
+        /*********** Tablet + Desktop ***********/
+        @media only screen and (min-width: 768px)
             margin-right: 5px 
             
         a
@@ -55,7 +58,7 @@
             font-size: 17px
         &__legal
             /*********** Desktop ***********/
-            @media only screen and (min-width: 1024px)
+            @media only screen and (min-width: 768px)
                 margin-left: 40px 
 
     &__highlight
