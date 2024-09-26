@@ -120,9 +120,10 @@
 }
 @media only screen and (min-width: 1024px) {
   .function__groupCard {
-    display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 0 auto;
+    max-width: 1024px;
   }
 }
 .function__card {
@@ -130,6 +131,13 @@
   justify-content: center;
   margin-left: 30px;
   margin-right: 20px;
+  /*********** Desktop ***********/
+}
+@media only screen and (min-width: 1024px) {
+  .function__card {
+    margin-left: 15px;
+    margin-right: 0;
+  }
 }
 .function__card__content {
   height: 75px;
@@ -180,7 +188,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 50px 0 65px 0;
+  padding: 50px 0 70px 0;
   /****** Cards ***********/
 }
 .restaurant__groupCard {
