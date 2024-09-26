@@ -6,8 +6,8 @@
   gap: 20px
   padding: 50px 0 70px 0
 
-  /*********** Desktop ***********/
-  @media only screen and (min-width: 1024px)
+  /*********** Tablet + Desktop ***********/
+  @media only screen and (min-width: 768px)
     display: block
 
   /****** Cards ***********/
@@ -16,8 +16,8 @@
     flex-direction: column
     gap: 20px
 
-    /*********** Desktop ***********/
-    @media only screen and (min-width: 1024px)
+    /*********** Tablet + Desktop ***********/
+    @media only screen and (min-width: 768px)
       display: grid
       grid-template-columns: repeat(2, 1fr)
       grid-gap: 50px
@@ -26,8 +26,8 @@
     display: flex
     justify-content: center
 
-    /*********** Desktop ***********/
-    @media only screen and (min-width: 1024px)
+    /*********** Tablet + Desktop ***********/
+    @media only screen and (min-width: 768px)
       &__right
         justify-content: left
     
@@ -102,6 +102,10 @@
         margin: 200px 0 0 240px
         background-color: transparent
         border: none
+
+        /*********** Tablet ***********/
+        @media only screen and (min-width: 768px)
+          margin: 202px 60px 0 285px
 
         /*********** Desktop ***********/
         @media only screen and (min-width: 1024px)

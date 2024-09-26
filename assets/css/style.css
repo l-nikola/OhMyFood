@@ -9,7 +9,6 @@
 .header__shadow {
   display: flex;
   justify-content: center;
-  margin-top: 6px;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
   margin-bottom: 5px;
   /*********** Desktop ***********/
@@ -189,10 +188,10 @@
   flex-direction: column;
   gap: 20px;
   padding: 50px 0 70px 0;
-  /*********** Desktop ***********/
+  /*********** Tablet + Desktop ***********/
   /****** Cards ***********/
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .restaurant {
     display: block;
   }
@@ -201,9 +200,9 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  /*********** Desktop ***********/
+  /*********** Tablet + Desktop ***********/
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .restaurant__groupCard {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -213,9 +212,9 @@
 .restaurant__card {
   display: flex;
   justify-content: center;
-  /*********** Desktop ***********/
+  /*********** Tablet + Desktop ***********/
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .restaurant__card__right {
     justify-content: left;
   }
@@ -295,7 +294,13 @@
   margin: 200px 0 0 240px;
   background-color: transparent;
   border: none;
+  /*********** Tablet ***********/
   /*********** Desktop ***********/
+}
+@media only screen and (min-width: 768px) {
+  .restaurant__card__icon--button {
+    margin: 202px 60px 0 285px;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .restaurant__card__icon--button {
@@ -478,7 +483,14 @@ a {
 
 .title {
   margin-left: 20px;
+  /*********** Tablet ***********/
   /*********** Desktop ***********/
+}
+@media only screen and (min-width: 768px) {
+  .title {
+    max-width: 768px;
+    margin: 0 auto 30px auto;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .title {
