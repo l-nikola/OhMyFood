@@ -474,8 +474,50 @@
   opacity: 1;
 }
 
-.picture {
+.restaurantPicture {
   width: 100%;
+}
+
+.restaurantPage {
+  position: relative;
+  margin-top: -35px;
+  background-color: var(--background-gray);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+.restaurantPage__title {
+  font-family: Shrikhand, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  padding: 30px 0 28px 15px;
+}
+.restaurantPage__meal {
+  padding: 0 10px;
+}
+.restaurantPage__meal__title {
+  font-size: 16px;
+  font-weight: 300;
+}
+.restaurantPage__card {
+  width: 340px;
+  height: 60px;
+  border-radius: 15px;
+  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
+  padding: 10px 0 0 15px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.restaurantPage__card__dinner {
+  font-size: 18px;
+  font-weight: 500;
+}
+.restaurantPage__card__info {
+  font-size: 15px;
+  font-weight: 300;
 }
 
 /****** Variable ***********/
