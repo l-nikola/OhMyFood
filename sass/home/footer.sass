@@ -1,70 +1,67 @@
 .footer
-    background-color: var(--dark-gray)
-    padding-bottom: 20px  
+  background-color: var(--dark-gray)
+  padding-bottom: 20px
+
+  /*********** Tablet + Desktop ***********/
+  @media only screen and (min-width: 768px)
+    padding: 44px 15px
+    
+  /*********** Tablet + Desktop ***********/
+  @media only screen and (min-width: 1024px)
+    padding: 45px 65px 25px 0
+
+
+  &__list
+    display: flex
+    flex-direction: column
+    gap: 9px
+    list-style-type: none
+    margin-left: 25px
 
     /*********** Tablet + Desktop ***********/
-    @media only screen and (min-width: 768px)  
-        padding: 44px 15px
+    @media only screen and (min-width: 768px)
+      flex-direction: row
+      justify-content: end
+      li:nth-child(1)
+        order: 2
+        margin: 0 0 8px 70px
+      li:nth-child(2)
+        order: 1
+      li:nth-child(3)
+        order: 1
+      li:nth-child(4)
+        order: 1
+      li:nth-child(5)
+        order: 1
+
+  &__title
+    font-family: Shrikhand
+    font-size: 19px
+    font-weight: 400
+    margin: 20px 0 10px 0
+    color: white
+
+  &__text
+    display: flex
+    align-items: center
+
     /*********** Tablet + Desktop ***********/
-    @media only screen and (min-width: 1024px)  
-        padding: 45px 65px 25px 0
+    @media only screen and (min-width: 768px)
+      margin-right: 5px
 
+    a
+      color: white
+      font-size: 17px
 
-    &__list
-        display: flex
-        flex-direction: column
-        gap: 9px
-        list-style-type: none
-        margin-left: 25px 
+    &__legal
+      /*********** Desktop ***********/
+      @media only screen and (min-width: 768px)
+        margin-left: 40px
 
-        /*********** Tablet + Desktop ***********/
-        @media only screen and (min-width: 768px)
-            flex-direction: row
-            justify-content: end
+  &__highlight
+    font-weight: 500
 
-    &__title
-        font-family: Shrikhand
-        font-size: 19px
-        font-weight: 400
-        margin: 20px 0 10px 0
-        color: white
-
-        /*********** Tablet + Desktop ***********/
-        @media only screen and (min-width: 768px)
-            display: none
-
-        &__desktop
-            display: none
-
-            /*********** Tablet + Desktop ***********/
-            @media only screen and (min-width: 768px)
-                display: inline
-                font-family: Shrikhand
-                font-size: 19px
-                font-weight: 400
-                margin: 20px 0 10px 0
-                color: white
-                margin-left: 90px
-
-    &__text 
-        display: flex 
-        align-items: center
-        /*********** Tablet + Desktop ***********/
-        @media only screen and (min-width: 768px)
-            margin-right: 5px 
-            
-        a
-            color: white
-            font-size: 17px
-        &__legal
-            /*********** Desktop ***********/
-            @media only screen and (min-width: 768px)
-                margin-left: 40px 
-
-    &__highlight
-        font-weight: 500
-
-    &__icon
-        font-size: 13px
-        width: 10px
-        margin-right: 10px  
+  &__icon
+    font-size: 13px
+    width: 10px
+    margin-right: 10px
