@@ -20,7 +20,18 @@
     &__title
       font-size: 16px
       font-weight: 300
-      margin-bottom: 18px
+      margin-bottom: 5px
+      position: relative
+      
+      &::after
+        content: ""
+        position: absolute
+        top: 23px
+        left: 0
+        width: 40px
+        height: 3px
+        background-color: var(--tertiaire) 
+
 
   &__card
     height: 55px
