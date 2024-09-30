@@ -351,6 +351,7 @@
   display: flex;
   justify-content: center;
   /*********** Tablet + Desktop ***********/
+  /*********** Animation like ***********/
 }
 @media only screen and (min-width: 768px) {
   .restaurant__card__right {
@@ -484,6 +485,7 @@
   background-color: var(--background-gray);
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
+  /*********** Animation like ***********/
 }
 .restaurantPage__title {
   font-family: Shrikhand, sans-serif;
@@ -534,6 +536,57 @@
 .restaurantPage__card__info__euro {
   margin: 0 15px 0 auto;
   font-weight: 700;
+}
+.restaurantPage__titleIcon {
+  display: flex;
+}
+
+.restaurantPage__like--button {
+  position: relative;
+  margin: 37px 0 0 33px;
+  background-color: transparent;
+  border: none;
+}
+.restaurantPage__like--button .restaurantPage__like {
+  font-size: x-large;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.restaurantPage__like--button .restaurantPage__like--deselect {
+  display: inline-block;
+}
+.restaurantPage__like--button .restaurantPage__like--select {
+  display: none;
+}
+.restaurantPage__like--button .restaurantPage__like--select {
+  opacity: 0;
+  display: block;
+  background: linear-gradient(0deg, var(--primaire) -12%, var(--secondaire) 124%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  clip-path: inset(0 0 100% 0);
+  transition: clip-path 0.7s ease-in-out;
+}
+.restaurantPage__like--button .restaurantPage__like--deselect {
+  opacity: 1;
+  transition: opacity 5s ease-in-out;
+}
+.restaurantPage__like--button:hover .restaurantPage__like--select {
+  opacity: 1;
+  clip-path: inset(0 0 0 0);
+}
+.restaurantPage__like--button:hover .restaurantPage__like--deselect {
+  opacity: 0;
+}
+.restaurantPage__like--button:not(:hover) .restaurantPage__like--select {
+  opacity: 1;
+  clip-path: inset(100% 0 0 0);
+  transition: clip-path 0.7s ease-in-out;
+}
+.restaurantPage__like--button:not(:hover) .restaurantPage__like--deselect {
+  opacity: 1;
 }
 
 /****** Variable ***********/

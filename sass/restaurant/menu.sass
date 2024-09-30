@@ -55,3 +55,56 @@
       &__euro
         margin: 0 15px 0 auto
         font-weight: 700
+
+  /*********** Animation like ***********/
+  &__titleIcon
+    display: flex
+
+.restaurantPage__like--button
+  position: relative
+  margin: 37px 0 0 33px
+  background-color: transparent
+  border: none
+
+  .restaurantPage__like
+    font-size: x-large
+    display: none
+    position: absolute
+    top: 0
+    left: 0
+
+    &--deselect
+      display: inline-block
+
+    &--select
+      display: none
+
+    &--select
+      opacity: 0
+      display: block
+      background: linear-gradient(0deg, var(--primaire) -12%, var(--secondaire) 124%)
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+      clip-path: inset(0 0 100% 0)
+      transition: clip-path 0.7s ease-in-out
+
+    &--deselect
+      opacity: 1
+      transition: opacity 5s ease-in-out
+
+  // Lors du hover
+  &:hover .restaurantPage__like--select
+    opacity: 1
+    clip-path: inset(0 0 0 0)
+
+  &:hover .restaurantPage__like--deselect
+    opacity: 0
+
+  // Effet inverse quand non-hover
+  &:not(:hover) .restaurantPage__like--select
+    opacity: 1
+    clip-path: inset(100% 0 0 0)
+    transition: clip-path 0.7s ease-in-out
+
+  &:not(:hover) .restaurantPage__like--deselect
+    opacity: 1
