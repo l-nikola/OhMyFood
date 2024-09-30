@@ -32,7 +32,6 @@
         height: 3px
         background-color: var(--tertiaire) 
 
-
   &__card
     height: 55px
     border-radius: 15px
@@ -60,51 +59,69 @@
   &__titleIcon
     display: flex
 
-.restaurantPage__like--button
-  position: relative
-  margin: 37px 0 0 33px
-  background-color: transparent
-  border: none
+  &__like--button
+    position: relative
+    margin: 37px 0 0 33px
+    background-color: transparent
+    border: none
 
-  .restaurantPage__like
-    font-size: x-large
-    display: none
-    position: absolute
-    top: 0
-    left: 0
-
-    &--deselect
-      display: inline-block
-
-    &--select
+    .restaurantPage__like
+      font-size: x-large
       display: none
+      position: absolute
+      top: 0
+      left: 0
 
-    &--select
+      &--deselect
+        display: inline-block
+
+      &--select
+        display: none
+
+      &--select
+        opacity: 0
+        display: block
+        background: linear-gradient(0deg, var(--primaire) -12%, var(--secondaire) 124%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        clip-path: inset(0 0 100% 0)
+        transition: clip-path 0.7s ease-in-out
+
+      &--deselect
+        opacity: 1
+        transition: opacity 5s ease-in-out
+
+    // Lors du hover
+    &:hover .restaurantPage__like--select
+      opacity: 1
+      clip-path: inset(0 0 0 0)
+
+    &:hover .restaurantPage__like--deselect
       opacity: 0
-      display: block
-      background: linear-gradient(0deg, var(--primaire) -12%, var(--secondaire) 124%)
-      -webkit-background-clip: text
-      -webkit-text-fill-color: transparent
-      clip-path: inset(0 0 100% 0)
+
+    // Effet inverse quand non-hover
+    &:not(:hover) .restaurantPage__like--select
+      opacity: 1
+      clip-path: inset(100% 0 0 0)
       transition: clip-path 0.7s ease-in-out
 
-    &--deselect
+    &:not(:hover) .restaurantPage__like--deselect
       opacity: 1
-      transition: opacity 5s ease-in-out
 
-  // Lors du hover
-  &:hover .restaurantPage__like--select
-    opacity: 1
-    clip-path: inset(0 0 0 0)
-
-  &:hover .restaurantPage__like--deselect
-    opacity: 0
-
-  // Effet inverse quand non-hover
-  &:not(:hover) .restaurantPage__like--select
-    opacity: 1
-    clip-path: inset(100% 0 0 0)
-    transition: clip-path 0.7s ease-in-out
-
-  &:not(:hover) .restaurantPage__like--deselect
-    opacity: 1
+  /*********** Command btn ***********/
+  &__button
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 185px
+    height: 50px
+    border-radius: 25px
+    color: white
+    margin: 0 auto
+    background: linear-gradient(0deg, var(--primaire) -12%, var(--secondaire) 124%)
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25)
+    transition: background 0.3s ease
+    
+    &:hover
+      background: linear-gradient(-5deg, var(--primaire) -25%, var(--secondaire) 110%)
+      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35)
