@@ -6,6 +6,11 @@
   border-top-right-radius: 40px
   padding-bottom: 45px  
 
+  /*********** Tablet ***********/
+  @media only screen and (min-width: 768px)
+    max-width: 768px
+    margin: -35px auto 0 auto
+
   /*********** Desktop ***********/
   @media only screen and (min-width: 1024px)
     max-width: 1055px
@@ -27,6 +32,11 @@
     flex-direction: column
     gap: 12px
     margin-bottom: 45px
+
+    /*********** Tablet ***********/
+    @media only screen and (min-width: 768px)
+      width: 500px
+      margin: 0 auto 45px auto
 
     /*********** Desktop ***********/
     @media only screen and (min-width: 1024px)
@@ -74,8 +84,8 @@
   /*********** Animation like ***********/
   &__titleIcon
     display: flex
-    /*********** Desktop ***********/
-    @media only screen and (min-width: 1024px)
+    /*********** Tablet + Desktop ***********/
+    @media only screen and (min-width: 768px)
       justify-content: center
 
   &__like--button

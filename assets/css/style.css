@@ -477,9 +477,9 @@
 
 .restaurantPicture {
   width: 100%;
-  /*********** Desktop ***********/
+  /*********** Tablet + Desktop ***********/
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .restaurantPicture {
     height: 383px;
     object-fit: cover;
@@ -493,9 +493,16 @@
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   padding-bottom: 45px;
+  /*********** Tablet ***********/
   /*********** Desktop ***********/
   /*********** Animation like ***********/
   /*********** Command btn ***********/
+}
+@media only screen and (min-width: 768px) {
+  .restaurantPage {
+    max-width: 768px;
+    margin: -35px auto 0 auto;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .restaurantPage {
@@ -521,7 +528,14 @@
   flex-direction: column;
   gap: 12px;
   margin-bottom: 45px;
+  /*********** Tablet ***********/
   /*********** Desktop ***********/
+}
+@media only screen and (min-width: 768px) {
+  .restaurantPage__meal {
+    width: 500px;
+    margin: 0 auto 45px auto;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .restaurantPage__meal {
@@ -569,9 +583,9 @@
 }
 .restaurantPage__titleIcon {
   display: flex;
-  /*********** Desktop ***********/
+  /*********** Tablet + Desktop ***********/
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .restaurantPage__titleIcon {
     justify-content: center;
   }
