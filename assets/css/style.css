@@ -486,14 +486,27 @@
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   padding-bottom: 45px;
+  /*********** Desktop ***********/
   /*********** Animation like ***********/
   /*********** Command btn ***********/
+}
+@media only screen and (min-width: 1024px) {
+  .restaurantPage {
+    max-width: 1055px;
+    margin: -35px auto 0 auto;
+  }
 }
 .restaurantPage__title {
   font-family: Shrikhand, sans-serif;
   font-size: 28px;
   font-weight: 400;
   padding: 30px 0 28px 15px;
+  /*********** Desktop ***********/
+}
+@media only screen and (min-width: 1024px) {
+  .restaurantPage__title {
+    padding: 40px 0 30px 15px;
+  }
 }
 .restaurantPage__meal {
   padding: 0 10px;
@@ -501,6 +514,13 @@
   flex-direction: column;
   gap: 12px;
   margin-bottom: 45px;
+  /*********** Desktop ***********/
+}
+@media only screen and (min-width: 1024px) {
+  .restaurantPage__meal {
+    width: 635px;
+    margin: 0 auto 45px auto;
+  }
 }
 .restaurantPage__meal__title {
   font-size: 16px;
@@ -542,12 +562,24 @@
 }
 .restaurantPage__titleIcon {
   display: flex;
+  /*********** Desktop ***********/
+}
+@media only screen and (min-width: 1024px) {
+  .restaurantPage__titleIcon {
+    justify-content: center;
+  }
 }
 .restaurantPage__like--button {
   position: relative;
   margin: 37px 0 0 33px;
   background-color: transparent;
   border: none;
+  /*********** Desktop ***********/
+}
+@media only screen and (min-width: 1024px) {
+  .restaurantPage__like--button {
+    margin: 47px 0 0 33px;
+  }
 }
 .restaurantPage__like--button .restaurantPage__like {
   font-size: x-large;
