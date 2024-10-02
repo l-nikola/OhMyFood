@@ -477,6 +477,13 @@
 
 .restaurantPicture {
   width: 100%;
+  /*********** Desktop ***********/
+}
+@media only screen and (min-width: 1024px) {
+  .restaurantPicture {
+    height: 383px;
+    object-fit: cover;
+  }
 }
 
 .restaurantPage {
