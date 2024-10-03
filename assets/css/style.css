@@ -475,6 +475,7 @@
   opacity: 1;
 }
 
+/*********** Picture *********** */
 .restaurantPicture {
   width: 100%;
   /*********** Tablet + Desktop ***********/
@@ -486,6 +487,7 @@
   }
 }
 
+/*********** Menu *********** */
 .restaurantPage {
   position: relative;
   margin-top: -35px;
