@@ -1,0 +1,15 @@
+//*********** Mixins ***********
+  
+// Animation restaurantCard
+@mixin restaurantCard($delay)
+  opacity: 0
+  animation: restaurantCard 0.5s ease-in-out forwards
+  animation-delay: $delay
+
+@keyframes restaurantCard
+  from
+    opacity: 0
+    transform: translateX(200px)
+  to
+    opacity: 1
+    transform: translateX(0) 
