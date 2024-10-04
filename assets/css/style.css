@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /****** Import ***********/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
@@ -265,11 +266,13 @@
   animation: showContent 0s forwards 2s;
 }
 
+/* Animation de rotation du loader */
 @keyframes spin {
   to {
     transform: rotate(360deg);
   }
 }
+/* Masquer le loader après 2 secondes */
 @keyframes hideLoader {
   0% {
     opacity: 1;
@@ -279,6 +282,7 @@
     visibility: hidden;
   }
 }
+/* Afficher le contenu après 2 secondes */ 
 @keyframes showContent {
   0% {
     opacity: 0;
@@ -435,6 +439,8 @@
   border: none;
   /*********** Tablet ***********/
   /*********** Desktop ***********/
+  /* Lors du hover */
+  /* Effet inverse */
 }
 @media only screen and (min-width: 768px) {
   .restaurant__card__icon--button {
@@ -598,6 +604,8 @@
   background-color: transparent;
   border: none;
   /*********** Desktop ***********/
+  /* Lors du hover */
+  /* Effet inverse quand non-hover */
 }
 @media only screen and (min-width: 1024px) {
   .restaurantPage__like--button {
