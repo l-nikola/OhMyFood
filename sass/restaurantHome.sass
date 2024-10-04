@@ -1,4 +1,4 @@
-/****** General ***********/
+//*********** General ***********
 .restaurant
   background-color: var(--background-gray)
   display: flex
@@ -6,17 +6,17 @@
   gap: 20px
   padding: 50px 0 70px 0
 
-  /*********** Tablet + Desktop ***********/
+  //*********** Tablet + Desktop ***********
   @media only screen and (min-width: 768px)
     display: block
 
-  /****** Cards ***********/
+  //*********** Cards ***********
   &__groupCard
     display: flex
     flex-direction: column
     gap: 20px
 
-    /*********** Tablet + Desktop ***********/
+    //*********** Tablet + Desktop ***********
     @media only screen and (min-width: 768px)
       display: grid
       grid-template-columns: repeat(2, 1fr)
@@ -28,13 +28,13 @@
     
     &__right
 
-      /*********** Tablet + Desktop ***********/
+      //*********** Tablet + Desktop ***********
       @media only screen and (min-width: 768px)
         justify-content: left
 
     &__left
 
-      /*********** Tablet + Desktop ***********/
+      //*********** Tablet + Desktop ***********
       @media only screen and (min-width: 768px)
         justify-content: right
 
@@ -45,7 +45,7 @@
       border-radius: 15px
       position: relative
 
-      /*********** Desktop ***********/
+      //*********** Desktop ***********
       @media only screen and (min-width: 1024px)
         width: 490px
 
@@ -57,7 +57,7 @@
         border-top-left-radius: 15px
         border-top-right-radius: 15px
 
-        /*********** Desktop ***********/
+        //*********** Desktop ***********
         @media only screen and (min-width: 1024px)
           width: auto
           height: 230px
@@ -90,7 +90,7 @@
       font-size: 17px
       font-weight: 300
 
-    /*********** Animation like ***********/
+    //*********** Animation like ***********
     &__icon
       font-size: x-large
       display: none
@@ -108,11 +108,11 @@
         background-color: transparent
         border: none
 
-        /*********** Tablet ***********/
+        //*********** Tablet ***********
         @media only screen and (min-width: 768px)
           margin: 202px 60px 0 285px
 
-        /*********** Desktop ***********/
+        //*********** Desktop ***********
         @media only screen and (min-width: 1024px)
           margin: 255px 55px 0 435px
 
@@ -129,7 +129,7 @@
           opacity: 1
           transition: opacity 5s ease-in-out
 
-        /* Lors du hover */
+        // Lors du hover
         &:hover .restaurant__card__icon--select
           opacity: 1
           clip-path: inset(0 0 0 0)
@@ -137,7 +137,7 @@
         &:hover .restaurant__card__icon--deselect
           opacity: 0
 
-        /* Effet inverse */
+        // Effet inverse
         &:not(:hover) .restaurant__card__icon--select
           opacity: 1
           clip-path: inset(100% 0 0 0)

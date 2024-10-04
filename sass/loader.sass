@@ -10,7 +10,7 @@
   top: 45%
   left: 45%
   animation: spin 1s infinite linear, hideLoader 0s forwards 2s 
-  /*********** Desktop ***********/
+  //*********** Desktop ***********
   @media only screen and (min-width: 1024px)
     top: 50%
     left: 50%
@@ -19,12 +19,12 @@
   opacity: 0
   animation: showContent 0s forwards 2s
 
-/* Animation de rotation du loader */
+// Animation de rotation du loader
 @keyframes spin
   to
     transform: rotate(360deg)
 
-/* Masquer le loader après 2 secondes */
+// Masquer le loader après 2 secondes
 @keyframes hideLoader
   0%
     opacity: 1
@@ -32,7 +32,7 @@
     opacity: 0
     visibility: hidden
 
-/* Afficher le contenu après 2 secondes */ 
+// Afficher le contenu après 2 secondes
 @keyframes showContent
   0%
     opacity: 0
