@@ -354,13 +354,20 @@
 .restaurant__card {
   display: flex;
   justify-content: center;
-  /*********** Tablet + Desktop ***********/
   /*********** Animation like ***********/
+}
+.restaurant__card__right {
+  /*********** Tablet + Desktop ***********/
 }
 @media only screen and (min-width: 768px) {
   .restaurant__card__right {
     justify-content: left;
   }
+}
+.restaurant__card__left {
+  /*********** Tablet + Desktop ***********/
+}
+@media only screen and (min-width: 768px) {
   .restaurant__card__left {
     justify-content: right;
   }
