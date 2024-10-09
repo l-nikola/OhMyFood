@@ -544,6 +544,7 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
+  position: relative;
 }
 .restaurantPage__card:nth-child(2) {
   opacity: 0;
@@ -572,6 +573,29 @@
 .restaurantPage__card__info__euro {
   margin: 0 15px 0 auto;
   font-weight: 700;
+}
+.restaurantPage__card__info__check {
+  color: var(--tertiaire);
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  background-color: var(--tertiaire);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.restaurantPage__card__info__check__icon {
+  background-color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .restaurantPage__titleIcon {
   display: flex;
