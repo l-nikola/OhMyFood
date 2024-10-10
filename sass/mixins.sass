@@ -1,5 +1,19 @@
 //*********** Mixins ***********
   
+// Animation iconCheck select
+@mixin iconCheckSelect($delay)
+  opacity: 0
+  animation: iconCheckSelect 0.5s ease-in-out forwards
+  animation-delay: $delay
+
+@keyframes iconCheckSelect
+  from
+    opacity: 0
+    transform: translateX(20px)
+  to
+    opacity: 1
+    transform: translateX(0)
+
 // Animation restaurantCard
 @mixin restaurantCard($delay)
   opacity: 0

@@ -81,6 +81,10 @@
     gap: 5px
     position: relative
 
+    &:hover .restaurantPage__card__info__check
+      display: flex
+      @include iconCheckSelect(0s)
+
     &:nth-child(2)
       @include restaurantCard(0.5s)
       
@@ -116,6 +120,7 @@
         align-items: center
         border-top-right-radius: 15px
         border-bottom-right-radius: 15px
+        display: none
 
         &__icon
           background-color: white
