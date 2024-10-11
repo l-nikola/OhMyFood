@@ -1,5 +1,7 @@
 @import 'mixins'
-  
+
+$menu-card-number: 4
+
 //*********** Picture ***********
 .restaurantPicture
   width: 100%
@@ -88,14 +90,9 @@
     &:not(:hover) .restaurantPage__card__info__check
       @include iconCheckDeselect()
 
-    &:nth-child(2)
-      @include restaurantCard(0.5s)
-      
-    &:nth-child(3)
-      @include restaurantCard(0.7s)
-      
-    &:nth-child(4)
-      @include restaurantCard(0.9s)
+    @for $i from 1 through $menu-card-number
+      &:nth-child(#{$i})
+        @include restaurantCard(0.5s + 0.2s * $i)
 
     &__dinner
       font-size: 18px
