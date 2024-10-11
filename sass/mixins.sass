@@ -1,10 +1,22 @@
 //*********** Mixins ***********
   
+// Animation iconCheck deselect
+@mixin iconCheckDeselect()
+  opacity: 1
+  animation: iconCheckDeselect 0.5s ease-in-out forwards
+
+@keyframes iconCheckDeselect
+  from
+    opacity: 1
+    transform: translateX(0)
+  to
+    opacity: 0
+    transform: translateX(20px)
+
 // Animation iconCheck select
-@mixin iconCheckSelect($delay)
+@mixin iconCheckSelect()
   opacity: 0
   animation: iconCheckSelect 0.5s ease-in-out forwards
-  animation-delay: $delay
 
 @keyframes iconCheckSelect
   from

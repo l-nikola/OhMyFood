@@ -450,6 +450,16 @@
   opacity: 1;
 }
 
+@keyframes iconCheckDeselect {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+}
 @keyframes iconCheckSelect {
   from {
     opacity: 0;
@@ -560,7 +570,10 @@
   display: flex;
   opacity: 0;
   animation: iconCheckSelect 0.5s ease-in-out forwards;
-  animation-delay: 0s;
+}
+.restaurantPage__card:not(:hover) .restaurantPage__card__info__check {
+  opacity: 1;
+  animation: iconCheckDeselect 0.5s ease-in-out forwards;
 }
 .restaurantPage__card:nth-child(2) {
   opacity: 0;
@@ -692,6 +705,16 @@
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
+@keyframes iconCheckDeselect {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+}
 @keyframes iconCheckSelect {
   from {
     opacity: 0;

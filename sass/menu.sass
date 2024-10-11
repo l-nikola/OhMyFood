@@ -83,7 +83,10 @@
 
     &:hover .restaurantPage__card__info__check
       display: flex
-      @include iconCheckSelect(0s)
+      @include iconCheckSelect()
+
+    &:not(:hover) .restaurantPage__card__info__check
+      @include iconCheckDeselect()
 
     &:nth-child(2)
       @include restaurantCard(0.5s)
