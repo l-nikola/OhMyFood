@@ -82,13 +82,22 @@ $menu-card-number: 4
     flex-direction: column
     gap: 5px
     position: relative
+    max-width: 100%
 
-    &:hover .restaurantPage__card__info__check
+    &:hover .restaurantPage__card__info__check 
       display: flex
+      opacity: 1
+      animation: iconCheckSelect 0.5s ease-in-out forwards
       @include iconCheckSelect()
 
-    &:not(:hover) .restaurantPage__card__info__check
+    &:hover .restaurantPage__card__info__euro
+      margin-right: 75px
+
+    &:not(:hover) .restaurantPage__card__info__check 
+      opacity: 0
+      animation: iconCheckDeselect 0.5s ease-in-out forwards
       @include iconCheckDeselect()
+
 
     @for $i from 1 through $menu-card-number
       &:nth-child(#{$i})
@@ -102,10 +111,14 @@ $menu-card-number: 4
       display: flex
       font-size: 15px
       font-weight: 300
+      text-overflow: ellipsis
+      white-space: nowrap
+      overflow: hidden
 
       &__euro
         margin: 0 15px 0 auto
         font-weight: 700
+        transition: margin 0.4s ease
       
       &__check
         color: var(--tertiaire)
