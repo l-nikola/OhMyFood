@@ -86,16 +86,13 @@ $menu-card-number: 4
 
     &:hover .restaurantPage__card__info__check 
       display: flex
-      opacity: 1
-      animation: iconCheckSelect 0.5s ease-in-out forwards
       @include iconCheckSelect()
 
     &:hover .restaurantPage__card__info__euro
       margin-right: 75px
 
     &:not(:hover) .restaurantPage__card__info__check 
-      opacity: 0
-      animation: iconCheckDeselect 0.5s ease-in-out forwards
+      display: flex
       @include iconCheckDeselect()
 
 
