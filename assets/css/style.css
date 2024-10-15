@@ -600,6 +600,11 @@
   animation: restaurantCard 0.5s ease-in-out forwards;
   animation-delay: 1.3s;
 }
+.restaurantPage__card:nth-child(5) {
+  opacity: 0;
+  animation: restaurantCard 0.5s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
 .restaurantPage__card__dinner {
   font-size: 18px;
   font-weight: 500;

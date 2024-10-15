@@ -1,6 +1,6 @@
 @import 'mixins'
 
-$menu-card-number: 4
+$menu-card-number: 5
 
 //*********** Picture ***********
 .restaurantPicture
@@ -94,7 +94,6 @@ $menu-card-number: 4
     &:not(:hover) .restaurantPage__card__info__check 
       display: flex
       @include iconCheckDeselect()
-
 
     @for $i from 1 through $menu-card-number
       &:nth-child(#{$i})
