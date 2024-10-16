@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OhMyFood - A la francaise</title>
+    <title>OhMyFood - À la française</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
       rel="stylesheet"
@@ -16,9 +16,226 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
   <body>
-    A_la_francaise
+    <!--********** Header **********-->
+    <header>
+      <nav class="header">
+        <a href="../index.html">
+          <i class="fa-solid fa-arrow-left header__arrow"></i>
+        </a>
+        <a href="../index.html">
+          <img
+            src="../assets/images/logo/ohmyfood@2x.svg"
+            alt="Logo de l'application"
+            class="header__logo"
+          />
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <img
+        src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+        alt="Image d'un plat du restaurant"
+        class="restaurantPicture"
+      />
+
+      <section class="restaurantPage">
+        <div class="restaurantPage__titleIcon">
+          <h1 class="restaurantPage__title">À la française</h1>
+          <button class="restaurantPage__like--button">
+            <i
+              class="fa-regular fa-heart restaurantPage__like restaurantPage__like--deselect"
+            ></i>
+            <i
+              class="fa-solid fa-heart restaurantPage__like restaurantPage__like--select"
+            ></i>
+          </button>
+        </div>
+
+        <form>
+          <!--********** Entrée **********-->
+          <section class="restaurantPage__meal">
+            <h2 class="restaurantPage__meal__title">ENTRÉES</h2>
+            <article class="restaurantPage__card">
+              <h3 class="restaurantPage__card__dinner">
+                Tartare de poulpe acidulé
+              </h3>
+              <aside class="restaurantPage__card__info">
+                <p class="restaurantPage__card__text">Aux zestes d'orange</p>
+                <span class="restaurantPage__card__info__euro">25€</span>
+              </aside>
+              <div class="restaurantPage__card__info__check">
+                <i
+                  class="fa-solid fa-check restaurantPage__card__info__check__icon"
+                ></i>
+              </div>
+            </article>
+
+            <article class="restaurantPage__card">
+              <h3 class="restaurantPage__card__dinner">
+                Velouté de légumes d'antan
+              </h3>
+              <aside class="restaurantPage__card__info">
+                <p class="restaurantPage__card__text">
+                  Carotte, panais, topinambour
+                </p>
+                <span class="restaurantPage__card__info__euro">35€</span>
+              </aside>
+              <div class="restaurantPage__card__info__check">
+                <i
+                  class="fa-solid fa-check restaurantPage__card__info__check__icon"
+                ></i>
+              </div>
+            </article>
+
+            <article class="restaurantPage__card">
+              <h3 class="restaurantPage__card__dinner">Soupe à l'oignon</h3>
+              <aside class="restaurantPage__card__info">
+                <p class="restaurantPage__card__text">Revisitée</p>
+                <span class="restaurantPage__card__info__euro">20€</span>
+              </aside>
+              <div class="restaurantPage__card__info__check">
+                <i
+                  class="fa-solid fa-check restaurantPage__card__info__check__icon"
+                ></i>
+              </div>
+            </article>
+          </section>
+
+          <!--********** Plat **********-->
+          <section class="restaurantPage__meal">
+            <h2 class="restaurantPage__meal__title">PLATS</h2>
+            <article class="restaurantPage__card">
+              <h3 class="restaurantPage__card__dinner">
+                Coquilles Saint-Jacques
+              </h3>
+              <aside class="restaurantPage__card__info">
+                <p class="restaurantPage__card__text">
+                  Accompagnées d'une purée de panais
+                </p>
+                <span class="restaurantPage__card__info__euro">40€</span>
+              </aside>
+              <div class="restaurantPage__card__info__check">
+                <i
+                  class="fa-solid fa-check restaurantPage__card__info__check__icon"
+                ></i>
+              </div>
+            </article>
+
+            <article class="restaurantPage__card">
+              <h3 class="restaurantPage__card__dinner">Magret de canard</h3>
+              <aside class="restaurantPage__card__info">
+                <p class="restaurantPage__card__text">
+                  Et parmentier de pommes de terre
+                </p>
+                <span class="restaurantPage__card__info__euro">35€</span>
+              </aside>
+              <div class="restaurantPage__card__info__check">
+                <i
+                  class="fa-solid fa-check restaurantPage__card__info__check__icon"
+                ></i>
+              </div>
+            </article>
+
+            <article class="restaurantPage__card">
+              <h3 class="restaurantPage__card__dinner">
+                Pigeonneau d’Ille-et-Vilaine
+              </h3>
+              <aside class="restaurantPage__card__info">
+                <p class="restaurantPage__card__text">
+                  Sur son lit de gnocchis aux légumes
+                </p>
+                <span class="restaurantPage__card__info__euro">44€</span>
+              </aside>
+              <div class="restaurantPage__card__info__check">
+                <i
+                  class="fa-solid fa-check restaurantPage__card__info__check__icon"
+                ></i>
+              </div>
+            </article>
+          </section>
+
+          <!--********** Dessert **********-->
+          <section class="restaurantPage__meal">
+            <h2 class="restaurantPage__meal__title">DESSERTS</h2>
+            <article class="restaurantPage__card">
+              <h3 class="restaurantPage__card__dinner">
+                Pétales de violettes glacés
+              </h3>
+              <aside class="restaurantPage__card__info">
+                <p class="restaurantPage__card__text">Et purée de noisettes</p>
+                <span class="restaurantPage__card__info__euro">18€</span>
+              </aside>
+              <div class="restaurantPage__card__info__check">
+                <i
+                  class="fa-solid fa-check restaurantPage__card__info__check__icon"
+                ></i>
+              </div>
+            </article>
+
+            <article class="restaurantPage__card">
+              <h3 class="restaurantPage__card__dinner">Fondant au chocolat</h3>
+              <aside class="restaurantPage__card__info">
+                <p class="restaurantPage__card__text">Revisité</p>
+                <span class="restaurantPage__card__info__euro">22€</span>
+              </aside>
+              <div class="restaurantPage__card__info__check">
+                <i
+                  class="fa-solid fa-check restaurantPage__card__info__check__icon"
+                ></i>
+              </div>
+            </article>
+
+            <article class="restaurantPage__card">
+              <h3 class="restaurantPage__card__dinner">
+                Millefeuille croustillant
+              </h3>
+              <aside class="restaurantPage__card__info">
+                <p class="restaurantPage__card__text">
+                  Myrtilles et pâte d’amande
+                </p>
+                <span class="restaurantPage__card__info__euro">23€</span>
+              </aside>
+              <div class="restaurantPage__card__info__check">
+                <i
+                  class="fa-solid fa-check restaurantPage__card__info__check__icon"
+                ></i>
+              </div>
+            </article>
+          </section>
+          <a href="#" class="restaurantPage__button">Commander</a>
+        </form>
+      </section>
+    </main>
+
+    <!--********** Footer **********-->
+    <footer class="footer">
+      <ul class="footer__list">
+        <li>
+          <a href="#"> <h5 class="footer__title">ohmyfood</h5></a>
+        </li>
+        <li class="footer__text footer__highlight">
+          <a href="#">
+            <i class="fa-solid fa-utensils footer__icon"></i>
+            Proposer un restaurant
+          </a>
+        </li>
+        <li class="footer__text footer__highlight">
+          <a href="#">
+            <i class="fa-solid fa-handshake-angle footer__icon"></i>
+            Devenir partenaire
+          </a>
+        </li>
+        <li class="footer__text footer__text__legal">
+          <a href="#">Mentions légales</a>
+        </li>
+        <li class="footer__text">
+          <a href="mailto:mon-mail@ohmyfood.com">Contact</a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
