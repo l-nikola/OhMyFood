@@ -91,6 +91,9 @@ $menu-card-number: 5
     &:hover .restaurantPage__card__info__euro
       margin-right: 75px
 
+    &:hover .restaurantPage__card__dinner
+      max-width: 80%
+
     &:not(:hover) .restaurantPage__card__info__check 
       display: flex
       @include iconCheckDeselect()
@@ -102,6 +105,9 @@ $menu-card-number: 5
     &__dinner
       font-size: 18px
       font-weight: 500
+      text-overflow: ellipsis
+      white-space: nowrap
+      overflow: hidden
 
     &__text
       text-overflow: ellipsis
