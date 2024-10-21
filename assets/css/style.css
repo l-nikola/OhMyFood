@@ -575,6 +575,9 @@
 .restaurantPage__card:hover .restaurantPage__card__info__euro {
   margin-right: 75px;
 }
+.restaurantPage__card:hover .restaurantPage__card__dinner {
+  max-width: 80%;
+}
 .restaurantPage__card:not(:hover) .restaurantPage__card__info__check {
   display: flex;
   opacity: 1;
@@ -608,6 +611,9 @@
 .restaurantPage__card__dinner {
   font-size: 18px;
   font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .restaurantPage__card__text {
   text-overflow: ellipsis;
