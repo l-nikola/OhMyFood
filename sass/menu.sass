@@ -183,17 +183,10 @@ $menu-card-number: 5 // Choix du nombre de cards avec l'animation
         display: none
 
       &--select
-        opacity: 0
-        display: block
-        background: linear-gradient(0deg, var(--primaire) -12%, var(--secondaire) 124%)
-        -webkit-background-clip: text
-        -webkit-text-fill-color: transparent
-        clip-path: inset(0 0 100% 0)
-        transition: clip-path 0.7s ease-in-out
+        @include like
 
       &--deselect
-        opacity: 1
-        transition: opacity 5s ease-in-out
+        @include deselectLike()
 
     // Lors du hover 
     &:hover .restaurantPage__like--select

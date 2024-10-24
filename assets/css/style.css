@@ -302,6 +302,32 @@
   color: var(--dark-gray);
 }
 
+@keyframes iconCheckSelect {
+  from {
+    transform: translateX(60px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes iconCheckDeselect {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(60px);
+  }
+}
+@keyframes restaurantCard {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 .restaurant {
   background-color: var(--background-gray);
   display: flex;
@@ -450,20 +476,20 @@
   opacity: 1;
 }
 
-@keyframes iconCheckDeselect {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(60px);
-  }
-}
 @keyframes iconCheckSelect {
   from {
     transform: translateX(60px);
   }
   to {
     transform: translateX(0);
+  }
+}
+@keyframes iconCheckDeselect {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(60px);
   }
 }
 @keyframes restaurantCard {
@@ -730,20 +756,20 @@
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
-@keyframes iconCheckDeselect {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(60px);
-  }
-}
 @keyframes iconCheckSelect {
   from {
     transform: translateX(60px);
   }
   to {
     transform: translateX(0);
+  }
+}
+@keyframes iconCheckDeselect {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(60px);
   }
 }
 @keyframes restaurantCard {

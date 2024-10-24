@@ -1,14 +1,18 @@
 //*********** Mixins ***********
-  
-// Animation iconCheck deselect
-@mixin iconCheckDeselect()
-  animation: iconCheckDeselect 0.3s ease-in-out forwards
 
-@keyframes iconCheckDeselect
-  from
-    transform: translateX(0)
-  to
-    transform: translateX(60px)
+// Animation like
+@mixin like()
+  opacity: 0
+  display: block
+  background: linear-gradient(0deg, var(--primaire) -12%, var(--secondaire) 124%)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  clip-path: inset(0 0 100% 0)
+  transition: clip-path 0.7s ease-in-out
+
+@mixin deselectLike()
+  opacity: 1
+  transition: opacity 5s ease-in-out
 
 // Animation iconCheck select
 @mixin iconCheckSelect()
@@ -19,6 +23,16 @@
     transform: translateX(60px)
   to
     transform: translateX(0)
+
+// Animation iconCheck deselect
+@mixin iconCheckDeselect()
+  animation: iconCheckDeselect 0.3s ease-in-out forwards
+
+@keyframes iconCheckDeselect
+  from
+    transform: translateX(0)
+  to
+    transform: translateX(60px)
 
 // Animation restaurantCard
 @mixin restaurantCard($delay)
