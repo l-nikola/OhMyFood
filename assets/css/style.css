@@ -422,14 +422,10 @@
 }
 .restaurant__card__icon {
   font-size: x-large;
-  display: none;
   position: absolute;
 }
 .restaurant__card__icon--deselect {
   display: inline-block;
-}
-.restaurant__card__icon--select {
-  display: none;
 }
 .restaurant__card__icon--button {
   position: absolute;
@@ -457,7 +453,6 @@
   transition: clip-path 0.7s ease-in-out;
 }
 .restaurant__card__icon--button .restaurant__card__icon--deselect {
-  opacity: 1;
   transition: opacity 5s ease-in-out;
 }
 .restaurant__card__icon--button:hover .restaurant__card__icon--select {
@@ -599,8 +594,8 @@
   overflow: hidden;
 }
 .restaurantPage__card:hover .restaurantPage__card__info__check {
-  display: flex;
   animation: iconCheckSelect 0.3s ease-in-out forwards;
+  display: flex;
 }
 .restaurantPage__card:hover .restaurantPage__card__info__euro {
   margin-right: 75px;
@@ -609,8 +604,8 @@
   max-width: 80%;
 }
 .restaurantPage__card:not(:hover) .restaurantPage__card__info__check {
-  display: flex;
   animation: iconCheckDeselect 0.3s ease-in-out forwards;
+  display: flex;
 }
 .restaurantPage__card:nth-child(1) {
   opacity: 0;
@@ -705,16 +700,12 @@
 }
 .restaurantPage__like--button .restaurantPage__like {
   font-size: x-large;
-  display: none;
   position: absolute;
   top: 0;
   left: 0;
 }
 .restaurantPage__like--button .restaurantPage__like--deselect {
   display: inline-block;
-}
-.restaurantPage__like--button .restaurantPage__like--select {
-  display: none;
 }
 .restaurantPage__like--button .restaurantPage__like--select {
   opacity: 0;
@@ -726,7 +717,6 @@
   transition: clip-path 0.7s ease-in-out;
 }
 .restaurantPage__like--button .restaurantPage__like--deselect {
-  opacity: 1;
   transition: opacity 5s ease-in-out;
 }
 .restaurantPage__like--button:hover .restaurantPage__like--select {

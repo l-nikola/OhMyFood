@@ -93,7 +93,6 @@ $menu-card-number: 5 // Choix du nombre de cards avec l'animation
     overflow: hidden
 
     &:hover .restaurantPage__card__info__check 
-      display: flex
       @include iconCheckSelect()
 
     &:hover .restaurantPage__card__info__euro
@@ -103,7 +102,6 @@ $menu-card-number: 5 // Choix du nombre de cards avec l'animation
       max-width: 80%
 
     &:not(:hover) .restaurantPage__card__info__check 
-      display: flex
       @include iconCheckDeselect()
 
     @for $i from 1 through $menu-card-number
@@ -176,16 +174,12 @@ $menu-card-number: 5 // Choix du nombre de cards avec l'animation
 
     .restaurantPage__like
       font-size: x-large
-      display: none
       position: absolute
       top: 0
       left: 0
 
       &--deselect
         display: inline-block
-
-      &--select
-        display: none
 
       &--select
         @include like

@@ -11,12 +11,12 @@
   transition: clip-path 0.7s ease-in-out
 
 @mixin deselectLike()
-  opacity: 1
   transition: opacity 5s ease-in-out
 
 // Animation iconCheck select
 @mixin iconCheckSelect()
   animation: iconCheckSelect 0.3s ease-in-out forwards
+  display: flex
 
 @keyframes iconCheckSelect
   from
@@ -27,6 +27,7 @@
 // Animation iconCheck deselect
 @mixin iconCheckDeselect()
   animation: iconCheckDeselect 0.3s ease-in-out forwards
+  display: flex
 
 @keyframes iconCheckDeselect
   from
