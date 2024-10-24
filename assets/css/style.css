@@ -509,7 +509,13 @@
 }
 @media only screen and (min-width: 768px) {
   .restaurantPicture {
-    height: 383px;
+    height: 350px;
+    object-fit: cover;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .restaurantPicture {
+    height: 500px;
     object-fit: cover;
   }
 }
