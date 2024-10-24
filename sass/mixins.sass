@@ -2,28 +2,22 @@
   
 // Animation iconCheck deselect
 @mixin iconCheckDeselect()
-  opacity: 1
-  animation: iconCheckDeselect 0.2s ease-in-out forwards
+  animation: iconCheckDeselect 0.3s ease-in-out forwards
 
 @keyframes iconCheckDeselect
   from
-    opacity: 1
     transform: translateX(0)
   to
-    opacity: 0
-    transform: translateX(15px)
+    transform: translateX(60px)
 
 // Animation iconCheck select
 @mixin iconCheckSelect()
-  opacity: 0
-  animation: iconCheckSelect 0.5s ease-in-out forwards
+  animation: iconCheckSelect 0.3s ease-in-out forwards
 
 @keyframes iconCheckSelect
   from
-    opacity: 0
-    transform: translateX(15px)
+    transform: translateX(60px)
   to
-    opacity: 1
     transform: translateX(0)
 
 // Animation restaurantCard

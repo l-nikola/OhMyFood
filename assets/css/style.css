@@ -452,21 +452,17 @@
 
 @keyframes iconCheckDeselect {
   from {
-    opacity: 1;
     transform: translateX(0);
   }
   to {
-    opacity: 0;
-    transform: translateX(15px);
+    transform: translateX(60px);
   }
 }
 @keyframes iconCheckSelect {
   from {
-    opacity: 0;
-    transform: translateX(15px);
+    transform: translateX(60px);
   }
   to {
-    opacity: 1;
     transform: translateX(0);
   }
 }
@@ -572,8 +568,7 @@
 }
 .restaurantPage__card:hover .restaurantPage__card__info__check {
   display: flex;
-  opacity: 0;
-  animation: iconCheckSelect 0.5s ease-in-out forwards;
+  animation: iconCheckSelect 0.3s ease-in-out forwards;
 }
 .restaurantPage__card:hover .restaurantPage__card__info__euro {
   margin-right: 75px;
@@ -583,8 +578,7 @@
 }
 .restaurantPage__card:not(:hover) .restaurantPage__card__info__check {
   display: flex;
-  opacity: 1;
-  animation: iconCheckDeselect 0.2s ease-in-out forwards;
+  animation: iconCheckDeselect 0.3s ease-in-out forwards;
 }
 .restaurantPage__card:nth-child(1) {
   opacity: 0;
@@ -632,7 +626,7 @@
   margin: 0 15px 0 auto;
   padding-left: 10px;
   font-weight: 700;
-  transition: margin 0.5s ease;
+  transition: margin 0.3s ease-in-out;
 }
 .restaurantPage__card__info__check {
   color: var(--tertiaire);
@@ -738,21 +732,17 @@
 
 @keyframes iconCheckDeselect {
   from {
-    opacity: 1;
     transform: translateX(0);
   }
   to {
-    opacity: 0;
-    transform: translateX(15px);
+    transform: translateX(60px);
   }
 }
 @keyframes iconCheckSelect {
   from {
-    opacity: 0;
-    transform: translateX(15px);
+    transform: translateX(60px);
   }
   to {
-    opacity: 1;
     transform: translateX(0);
   }
 }
