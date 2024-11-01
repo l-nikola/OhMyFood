@@ -7,13 +7,15 @@
   background: linear-gradient(0deg, var(--primaire) -12%, var(--secondaire) 124%)
   -webkit-background-clip: text
   -webkit-text-fill-color: transparent
-  clip-path: inset(0 0 100% 0)
+  clip-path: inset(0 0 0 0)
   transition: clip-path 0.7s ease-in-out
 
 @mixin deselectLike()
-  transition: opacity 5s ease-in-out
+  opacity: 1
+  clip-path: inset(100% 0 0 0)
+  transition: clip-path 0.7s ease-in-out
 
-// Animation iconCheck select
+// Animation menu select -> iconCheckSelect
 @mixin iconCheckSelect()
   animation: iconCheckSelect 0.3s ease-in-out forwards
   display: flex
@@ -24,7 +26,7 @@
   to
     transform: translateX(0)
 
-// Animation iconCheck deselect
+// Animation menu deselect -> iconCheckDeselect
 @mixin iconCheckDeselect()
   animation: iconCheckDeselect 0.3s ease-in-out forwards
   display: flex

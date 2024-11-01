@@ -117,22 +117,10 @@
         .restaurant__card__icon--select
           @include like()
 
-        .restaurant__card__icon--deselect
-          @include deselectLike()
-
         // Lors du hover
         &:hover .restaurant__card__icon--select
           opacity: 1
-          clip-path: inset(0 0 0 0)
-
-        &:hover .restaurant__card__icon--deselect
-          opacity: 0
 
         // Effet inverse
         &:not(:hover) .restaurant__card__icon--select
-          opacity: 1
-          clip-path: inset(100% 0 0 0)
-          transition: clip-path 0.7s ease-in-out
-
-        &:not(:hover) .restaurant__card__icon--deselect
-          opacity: 1
+          @include deselectLike()
