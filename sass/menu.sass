@@ -178,31 +178,16 @@ $menu-card-number: 5 // Choix du nombre de cards avec l'animation
       top: 0
       left: 0
 
-      &--deselect
-        display: inline-block
-
       &--select
-        @include like
-
-      &--deselect
-        @include deselectLike()
+        @include like()
 
     // Lors du hover 
     &:hover .restaurantPage__like--select
       opacity: 1
-      clip-path: inset(0 0 0 0)
-
-    &:hover .restaurantPage__like--deselect
-      opacity: 0
 
     // Effet inverse quand non-hover
     &:not(:hover) .restaurantPage__like--select
-      opacity: 1
-      clip-path: inset(100% 0 0 0)
-      transition: clip-path 0.7s ease-in-out
-
-    &:not(:hover) .restaurantPage__like--deselect
-      opacity: 1
+      @include deselectLike()
 
   //*********** Command btn ***********
   &__button
